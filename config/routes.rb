@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :rooms, only: [:new, :create]
   get 'messages/index'
   get 'message/index'
-  root to: "messages#index"
+  root to: "rooms#index"
 end
